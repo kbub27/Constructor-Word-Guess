@@ -9,7 +9,7 @@ class Letter {
                 this.char = '_'
             };
         },
-
+        //FUNCITON TO CHECK THE GUESSED LETTER
         this.guess = function (guess) {
             if (this.char.toLowerCase() === guess.toLowerCase()) {
                 this.guessed = true;    
