@@ -1,4 +1,4 @@
-const Letter = require('./letter.js');
+var Letter = require('./letter.js');
 
 class Word {
     constructor(string) {
