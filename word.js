@@ -13,8 +13,18 @@ class Word {
             return this.array.join(' ');
         },
         //A GUESS FUNCTION CALLING THE LETTER.JS GUESS FUNCTION
-        
-
+        this.guess = function (letterGuess) {
+            this.array.forEach(letter => {
+                letter.guess(letterGuess);
+            });
+        },
+        //CHECK IF ALL LETTERS ARE GUESSED 
+        //DONT QUITE KNOW HOW THIS WORKS GOT IT FROM STACK OVERFLOW
+        this.allDone = function () {
+            return this.array.every((currentValue) => currentValue.guessed);
+        }
 
     }
-}
+};
+
+module.exports = Word;
